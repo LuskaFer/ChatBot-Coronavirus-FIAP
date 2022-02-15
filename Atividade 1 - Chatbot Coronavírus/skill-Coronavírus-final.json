@@ -1,0 +1,1136 @@
+{
+  "intents": [
+    {
+      "intent": "sintomas",
+      "examples": [
+        {
+          "text": "Essa doença causa o quê?"
+        },
+        {
+          "text": "Quais são os sintomas de coronavírus?"
+        },
+        {
+          "text": "O que o coronavírus causa?"
+        },
+        {
+          "text": "O que se sente com covid-19?"
+        },
+        {
+          "text": "Quais os sintomas da doença?"
+        }
+      ],
+      "description": "Sintomas principais do coronavírus"
+    },
+    {
+      "intent": "agradecimento",
+      "examples": [
+        {
+          "text": "Valeu!"
+        },
+        {
+          "text": "Obrigada!"
+        },
+        {
+          "text": "Muito obrigado!"
+        },
+        {
+          "text": "Entendi"
+        },
+        {
+          "text": "Vlw"
+        },
+        {
+          "text": "Obrigado"
+        }
+      ],
+      "description": "Frases de agradecimento."
+    },
+    {
+      "intent": "duvidas_coronavirus",
+      "examples": [
+        {
+          "text": "Quero saber mais sobre o coronavírus."
+        },
+        {
+          "text": "tenho dúvidas"
+        },
+        {
+          "text": "Tenho perguntas sobre a COVID-19."
+        },
+        {
+          "text": "Desejo obter informações sobre o coronavírus."
+        },
+        {
+          "text": "Você pode me falar sobre o coronavírus?"
+        },
+        {
+          "text": "Quero tirar dúvidas sobre a COVID-19."
+        }
+      ],
+      "description": "Dúvidas gerais sobre o coronavírus."
+    },
+    {
+      "intent": "tratamento",
+      "examples": [
+        {
+          "text": "Tem remédio para o coronavírus?"
+        },
+        {
+          "text": "Quais são os tratamentos disponíveis?"
+        },
+        {
+          "text": "Quais vacinas combatem a covid-19?"
+        },
+        {
+          "text": "Que remédios existem para tratar o coronavírus?"
+        },
+        {
+          "text": "Quais são as formas de tratamento contra o coronavírus?"
+        },
+        {
+          "text": "Como tratar o coronavírus?"
+        },
+        {
+          "text": "Existe vacina para a covid-19?"
+        }
+      ],
+      "description": "Questões sobre formas de tratamento do vírus."
+    },
+    {
+      "intent": "fim_das_duvidas",
+      "examples": [
+        {
+          "text": "Não preciso mais de ajuda"
+        },
+        {
+          "text": "Era só isso"
+        },
+        {
+          "text": "Sem dúvidas"
+        },
+        {
+          "text": "Nada"
+        },
+        {
+          "text": "Não tenho mais dúvidas"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "suspeita_de_coronavirus",
+      "examples": [
+        {
+          "text": "Meus sintomas são de coronavírus?"
+        },
+        {
+          "text": "Estou mal."
+        },
+        {
+          "text": "Estou com coronavírus?"
+        },
+        {
+          "text": "Quero saber se estou com covid-19."
+        },
+        {
+          "text": "Acho que tenho coronavírus."
+        },
+        {
+          "text": "Preciso ir ao médico?"
+        },
+        {
+          "text": "Devo ir a um hospital?"
+        },
+        {
+          "text": "Tenho covid-19?"
+        }
+      ],
+      "description": "Perguntas relacionadas à suspeita de coronavírus."
+    }
+  ],
+  "entities": [
+    {
+      "entity": "tratamentos",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "tratamentos",
+          "synonyms": [
+            "tratamento"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "remédios",
+          "synonyms": [
+            "remedios",
+            "remédio",
+            "remedio",
+            "medicamento",
+            "medicamentos"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "vacinas",
+          "synonyms": [
+            "vacina",
+            "vacinação",
+            "vacinacao",
+            "vacinaçao"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "bem-mal",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "bem",
+          "synonyms": [
+            "ótima",
+            "otima",
+            "boa",
+            "excelente"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "mal",
+          "synonyms": [
+            "mau",
+            "ruim",
+            "péssima",
+            "pessima"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sintomas",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "falta de ar",
+          "synonyms": [
+            "não consigo respirar",
+            "tô sem fôlego",
+            "estou sem folego",
+            "n tenho folego",
+            "sem ar",
+            "fauta de ar",
+            "dificuldade de respirar"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "palidez",
+          "synonyms": [
+            "pálido",
+            "palido",
+            "pálida",
+            "palida",
+            "palides"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "boca ou ponta dos dedos roxa",
+          "synonyms": [
+            "boca roxa",
+            "ponta dos dedos roxa"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "nenhum desses sintomas",
+          "synonyms": [
+            "sem sintomas",
+            "nenhum sintoma"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "dor de garganta",
+          "synonyms": [
+            "garganta dolorida",
+            "minha garganta dói"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "respirando muito rápido",
+          "synonyms": [
+            "respirando rapido",
+            "respirando rápido demais"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "sensação de desmaio",
+          "synonyms": [
+            "acho que vou desmaiar"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "tosse",
+          "synonyms": [
+            "toce",
+            "tosce"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "pressão baixa",
+          "synonyms": [
+            "pressao baixa",
+            "hipotensão",
+            "hipotenso",
+            "hipotensa"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "febre",
+          "synonyms": [
+            "temperatura alta",
+            "alta temperatura"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sim-e-nao",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "sim",
+          "synonyms": [
+            "ss",
+            "to",
+            "tou",
+            "estou",
+            "tô",
+            "uhum",
+            "aham",
+            "mhm"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "não",
+          "synonyms": [
+            "nn",
+            "nao",
+            "nem"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_1_1586812423733",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1586811813576"
+      },
+      "conditions": "@sintomas:(falta de ar) &&  @sintomas != \"tosse\" && @sintomas != \"febre\"",
+      "dialog_node": "response_5_1586898289565",
+      "previous_sibling": "response_1_1586812618360"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1586812423733",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1586811794791"
+      },
+      "conditions": "@sintomas:(falta de ar) && @sintomas:febre",
+      "dialog_node": "response_1_1586812618360",
+      "previous_sibling": "response_9_1586812560157"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1586812423733",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1586811813576"
+      },
+      "conditions": "@sintomas != \"falta de ar\"",
+      "dialog_node": "response_4_1586976983469",
+      "previous_sibling": "response_5_1586898289565"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1586812423733",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1586811794791"
+      },
+      "conditions": "@sintomas:(falta de ar) && @sintomas:tosse",
+      "dialog_node": "response_9_1586812560157"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Os sintomas de coronavírus podem incluir: dificuldade de respirar, dor de garganta, febre e tosse. Quais desses sintomas você está sentido?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_7_1586811194705",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1586811194721",
+      "previous_sibling": "handler_4_1586811194721"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1586811194705",
+      "context": {
+        "sintomas": "@sintomas"
+      },
+      "conditions": "@sintomas",
+      "event_name": "input",
+      "dialog_node": "handler_4_1586811194721"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Ainda não há medicamento específico para eliminar o coronavírus.\nVocê tem mais alguma dúvida?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_6_1586812985349",
+      "conditions": "@tratamentos:remédios",
+      "dialog_node": "response_1_1586975871618",
+      "previous_sibling": "response_9_1586975629316"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Existe tratamento disponível, que evita o agravamento da doença e reduz o desconforto. No entanto, ainda não há medicamento específico para eliminar o coronavírus. A grande maioria dos casos são autolimitados, ou seja, são curados espontaneamente. Segundo a Organização Mundial da Saúde, cerca de 80% dos casos são leves. A maior preocupação é quando a doença atinge idosos ou pessoas com doenças crônicas (hipertensão, doenças cardíacas, diabetes, etc), nas quais o risco de complicações aumenta. Pessoas com quadro grave da doença devem ser hospitalizadas. Os casos graves devem ser encaminhados a um Hospital de Referência para isolamento e tratamento. Os casos leves devem ser acompanhados pela Atenção Primária em Saúde (APS) e instituídas medidas de precaução domiciliar.\nVocê tem mais alguma dúvida?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_6_1586812985349",
+      "conditions": "@tratamentos:tratamentos",
+      "dialog_node": "response_9_1586975629316",
+      "previous_sibling": "response_2_1586813302958"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Até o momento, não há vacina disponível contra o COVID-19. "
+              },
+              {
+                "text": "Você tem mais alguma dúvida?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_6_1586812985349",
+      "conditions": "@tratamentos:vacinas",
+      "dialog_node": "response_2_1586813302958"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ótimo! Lembre-se de manter os cuidados para se precaver contra o COVID-19, adotando as seguintes ações:\n- lave as mãos frequentemente com água e sabão, ou higienize com álcool gel 70%;\n- cubra a boca e o nariz com um lenço de papel ao tossir e espirrar e jogue no lixo após o uso, ou proteja com o antebraço (nunca com as mãos);\n- evite locais com aglomeração de pessoas;\n- não compartilhe objetos de uso pessoal.\nEm caso de dúvidas, ligue para o Disque Saúde (136) do Ministério da Saúde ou procure uma unidade de saúde.\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1586810723531",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_9_1586810943201"
+      },
+      "conditions": "@bem-mal:bem",
+      "dialog_node": "response_5_1586810767022",
+      "previous_sibling": "node_1_1586810369501"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Certo. Farei algumas perguntas para verificar se seu caso indica o contágio pela COVID-19."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_2_1586810723531",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1586810369501"
+      },
+      "conditions": "@bem-mal:mal",
+      "dialog_node": "response_4_1586810832005",
+      "previous_sibling": "response_5_1586810767022"
+    },
+    {
+      "type": "standard",
+      "title": "Sintomas de coronavírus - geral",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Os sintomas de coronavírus podem incluir: dificuldade de respirar, dor de garganta, febre e tosse. Quais desses sintomas você está sentido?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1586810723531",
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "@bem-mal:mal",
+      "dialog_node": "node_1_1586810369501"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O coronavírus 2019 (Covid-19) é similar a uma \"gripe\" Geralmente é uma doença leve ou moderada, mas alguns casos podem ficar graves. Os sintomas mais comuns são: febre, tosse e/ou dificuldade para respirar. Alguns pacientes podem apresentar cansaço, dores no corpo, mal estar em geral, congestão nasal, corrimento nasal, dor de garganta ou dor no peito."
+              },
+              {
+                "text": "Esses sintomas geralmente são leves e começam gradualmente. Algumas pessoas são infectadas, mas não apresentam sintomas ou apresentam sintomas leves, quase que imperceptíveis. A maioria das pessoas (cerca de 80%) se recupera da doença sem precisar de tratamento especial. Cerca de 1 em cada 6 pessoas que adoecem pelo COVID-19 podem apresentar a forma grave da doença. Pessoas idosas e portadoras de certas condições crônicas como pressão alta, doenças cardiovasculares e diabetes, têm um maior risco de desenvolver a forma grave. Pessoas com febre, tosse e dificuldade em respirar devem procurar atendimento médico imediato. Deve-se utilizar uma máscara como forma de prevenir a dispersão de gotículas respiratórias ao tossir, espirrar ou falar, combinando com a lavagem ou higienização das mãos. Após o atendimento, deve-se seguir as orientações médicas, evitando frequentar ambientes públicos ou mesmo de trabalho, buscando permanecer em casa até desaparecimento dos sintomas. Isso irá previnir a propagação de vírus e a ocorrência de novas infecções."
+              },
+              {
+                "text": "Você tem mais alguma dúvida?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_8_1586813368118",
+      "disabled": true,
+      "dialog_node": "response_5_1586975150190"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Ótimo! Lembre-se de manter os cuidados para se precaver contra o COVID-19, adotando as seguintes ações:\n- lave as mãos frequentemente com água e sabão, ou higienize com álcool gel 70%;\n- cubra a boca e o nariz com um lenço de papel ao tossir e espirrar e jogue no lixo após o uso, ou proteja com o antebraço (nunca com as mãos);\n- evite locais com aglomeração de pessoas;\n- não compartilhe objetos de uso pessoal.\nEm caso de dúvidas, ligue para o Disque Saúde 136 do Ministério da Saúde ou procure uma unidade de saúde."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_3_1586809298543",
+      "conditions": "@bem-mal:bem",
+      "event_name": "filled",
+      "dialog_node": "handler_6_1586809298543",
+      "previous_sibling": "handler_5_1586809298543"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Certo. Farei algumas perguntas para determinar se seu estado de saúde indica o contágio por COVID-19."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_3_1586809298543",
+      "conditions": "@bem-mal:mal",
+      "event_name": "filled",
+      "dialog_node": "handler_7_1586809298543",
+      "previous_sibling": "handler_6_1586809298543"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Como está a sua saúde nesse momento?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_3_1586809298543",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1586809298543",
+      "previous_sibling": "handler_4_1586809298543"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1586809298543",
+      "context": {
+        "bem_mal": "@bem-mal"
+      },
+      "conditions": "@bem-mal",
+      "event_name": "input",
+      "dialog_node": "handler_4_1586809298543"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1586810369501",
+      "disabled": true,
+      "dialog_node": "response_6_1586812158857",
+      "previous_sibling": "node_1_1586812423733"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1586810369501",
+      "disabled": true,
+      "dialog_node": "response_7_1586812204368",
+      "previous_sibling": "response_6_1586812158857"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1586810369501",
+      "variable": "$sintomas",
+      "dialog_node": "slot_7_1586811194705",
+      "previous_sibling": "response_7_1586812204368"
+    },
+    {
+      "type": "standard",
+      "title": "Sintomas de coronavírus - específico",
+      "parent": "node_1_1586810369501",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@sintomas",
+      "dialog_node": "node_1_1586812423733"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Você está com febre?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_5_1586810216448",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1586810216453",
+      "previous_sibling": "handler_1_1586810216453"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Caso improvável."
+              },
+              {
+                "text": "Baseado em suas respostas, é provável que essa situação NÃO se enquadre como caso suspeito de doença pela COVID-19. Mantenha a as condutas de precaução e prevenção recomendadas pelas autoridades médicas."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_5_1586810216448",
+      "conditions": "@sim-e-nao:não",
+      "event_name": "filled",
+      "dialog_node": "handler_7_1586810300418",
+      "previous_sibling": "handler_7_1586810216453"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1586810216448",
+      "context": {
+        "sintomas_febre": "@sintomas:febre"
+      },
+      "conditions": "@sintomas:febre",
+      "event_name": "input",
+      "dialog_node": "handler_1_1586810216453"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Você está sentindo dificuldade de respirar?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_9_1586809754440",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1586809754443",
+      "previous_sibling": "handler_9_1586809754443"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Caso improvável. "
+              },
+              {
+                "text": "Baseado em suas respostas, é provável que essa situação NÃO se enquadre como caso suspeito de doença pela COVID-19. Mantenha a as condutas de precaução e prevenção."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "slot_9_1586809754440",
+      "conditions": "@sim-e-nao:não",
+      "event_name": "filled",
+      "dialog_node": "handler_3_1586810006348",
+      "previous_sibling": "handler_7_1586809754443"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1586809754440",
+      "context": {
+        "sintomas_falta_de_ar": "@sintomas:(falta de ar)"
+      },
+      "conditions": "@sintomas:(falta de ar)",
+      "event_name": "input",
+      "dialog_node": "handler_9_1586809754443"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1586809298539",
+      "variable": "$bem_mal",
+      "dialog_node": "slot_3_1586809298543",
+      "previous_sibling": "node_4_1586811813576"
+    },
+    {
+      "type": "standard",
+      "title": "Caso suspeito",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Urgência! Baseado em suas respostas, é provável que esta situação se enquadre como caso suspeito de doença pelo coronavírus 2019 (COVID-19). No entanto, isto não se trata de um diagnóstico."
+              },
+              {
+                "text": "A orientação é que você procure atendimento em um serviço de urgência mais próximo para avaliação clínica ou disque para o SAMU (192)."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1586809298539",
+      "conditions": "",
+      "dialog_node": "node_5_1586811794791",
+      "previous_sibling": "node_2_1586810723531"
+    },
+    {
+      "type": "standard",
+      "title": "Estado de saúde",
+      "parent": "node_1_1586809298539",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@bem-mal",
+      "dialog_node": "node_2_1586810723531",
+      "previous_sibling": "response_5_1586810781514"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1586809298539",
+      "variable": "$sintomas_falta_de_ar",
+      "dialog_node": "slot_9_1586809754440",
+      "previous_sibling": "slot_3_1586809298543"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1586809298539",
+      "variable": "$sintomas_febre",
+      "dialog_node": "slot_5_1586810216448",
+      "previous_sibling": "slot_9_1586809754440"
+    },
+    {
+      "type": "standard",
+      "title": "Caso não suspeito",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Baseado em suas respostas, é provável que essa situação NÃO se enquadre como caso suspeito de doença pela COVID-19. Lembre-se de manter os cuidados para se precaver contra o COVID-19, adotando as seguintes ações:\n- lave as mãos frequentemente com água e sabão, ou higienize com álcool gel 70%;\n- cubra a boca e o nariz com um lenço de papel ao tossir e espirrar e jogue no lixo após o uso, ou proteja com o antebraço (nunca com as mãos);\n- evite locais com aglomeração de pessoas;\n- não compartilhe objetos de uso pessoal.\nEm caso de dúvidas, ligue para o Disque Saúde 136 do Ministério da Saúde ou procure uma unidade de saúde.\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1586809298539",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_9_1586810943201"
+      },
+      "conditions": "@sintomas != \"falta de ar\"",
+      "dialog_node": "node_4_1586811813576",
+      "previous_sibling": "node_5_1586811794791"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Como está a sua saúde nesse momento?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1586809298539",
+      "disabled": true,
+      "dialog_node": "response_5_1586810781514"
+    },
+    {
+      "type": "standard",
+      "title": "Estado de saúde geral",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Como está a sua saúde nesse momento?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "#suspeita_de_coronavirus",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_1_1586809298539",
+      "previous_sibling": "node_6_1586812985349"
+    },
+    {
+      "type": "standard",
+      "title": "Dúvidas - sintomas",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O coronavírus 2019 (Covid-19) é similar a uma \"gripe\" Geralmente é uma doença leve ou moderada, mas alguns casos podem ficar graves. Os sintomas mais comuns são: febre, tosse e/ou dificuldade para respirar. Alguns pacientes podem apresentar cansaço, dores no corpo, mal estar em geral, congestão nasal, corrimento nasal, dor de garganta ou dor no peito."
+              },
+              {
+                "text": "Esses sintomas geralmente são leves e começam gradualmente. Algumas pessoas são infectadas, mas não apresentam sintomas ou apresentam sintomas leves, quase que imperceptíveis. A maioria das pessoas (cerca de 80%) se recupera da doença sem precisar de tratamento especial. Cerca de 1 em cada 6 pessoas que adoecem pelo COVID-19 podem apresentar a forma grave da doença. Pessoas idosas e portadoras de certas condições crônicas como pressão alta, doenças cardiovasculares e diabetes, têm um maior risco de desenvolver a forma grave. Pessoas com febre, tosse e dificuldade em respirar devem procurar atendimento médico imediato. Deve-se utilizar uma máscara como forma de prevenir a dispersão de gotículas respiratórias ao tossir, espirrar ou falar, combinando com a lavagem ou higienização das mãos. Após o atendimento, deve-se seguir as orientações médicas, evitando frequentar ambientes públicos ou mesmo de trabalho, buscando permanecer em casa até desaparecimento dos sintomas. Isso irá previnir a propagação de vírus e a ocorrência de novas infecções."
+              },
+              {
+                "text": "Você tem mais alguma dúvida?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "#sintomas",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_8_1586813368118",
+      "previous_sibling": "node_9_1586808368665"
+    },
+    {
+      "type": "standard",
+      "title": "Tratamentos",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@tratamentos",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_6_1586812985349",
+      "previous_sibling": "node_8_1586813368118"
+    },
+    {
+      "type": "standard",
+      "title": "Dúvidas sobre o coronavírus",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Qual é a sua pergunta?"
+              },
+              {
+                "text": "Digite a sua dúvida."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#duvidas_coronavirus",
+      "dialog_node": "node_9_1586808368665",
+      "previous_sibling": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Fim da interação 2",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Agradecemos o contato. Fique à vontade para retornar se tiver mais dúvidas sobre a COVID-19."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@sim-e-nao:não || #fim_das_duvidas",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_8_1586975297406",
+      "previous_sibling": "node_9_1586810943201"
+    },
+    {
+      "type": "standard",
+      "title": "Em outros casos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eu não entendi. Você pode tentar reformular a frase."
+              },
+              {
+                "text": "Você pode reformular sua afirmação? Eu não estou entendendo."
+              },
+              {
+                "text": "Eu não entendi o sentido."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Em outros casos",
+      "previous_sibling": "node_8_1586975297406",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "Fim da interação",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Posso ajudar em mais alguma coisa?"
+              },
+              {
+                "text": "Você tem mais alguma dúvida?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#agradecimento || @sim-e-nao:sim",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_9_1586810943201",
+      "previous_sibling": "node_1_1586809298539"
+    },
+    {
+      "type": "standard",
+      "title": "Bem-vindo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Bem-vindo(a). Estou aqui para tirar dúvidas sobre a COVID-19 e ajudar a identificar casos suspeitos da doença."
+              },
+              {
+                "text": "Em que posso ajudar?"
+              },
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Bem-vindo"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": "Você quis dizer:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "Nenhuma das anteriores"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Você quis dizer:"
+    }
+  },
+  "learning_opt_out": false,
+  "name": "Coronavírus",
+  "language": "pt-br",
+  "description": ""
+}

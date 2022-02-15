@@ -1,0 +1,43 @@
+Documento: Avaliação Chatbot e Covid-19
+Data:17/04/2020
+
+O que será avaliado?
+
+Se a compreensão sobre intenções, entidades e variáveis de contexto ficaram claras. 
+Além disso, a aplicação da técnica de construção de diálogos utilizando as boas práticas 
+apresentadas ao longo do curso para sempre otimizar a experiência que o usuário terá ao 
+conversar com nosso Assistant. 
+
+Como será?
+
+Cada grupo deverá implementar pelo menos 3 intenções e entre 3 a 4 entidades para três cenários de consulta ao aplicativo. 
+Um cenário será comum entre todos os grupos e os outros dois serão de escolha do grupo. 
+
+Os cenários são: 
+
+Comum 
+
+• Como está sua saúde nesse momento? 
+
+Nosso grupo 
+
+Quais são os sintomas? 
+Existe vacina, medicamento ou tratamento?
+
+
+Prazo e como entregar:
+
+1. O grupo da Challenge deverá entregar um documento de Word, organizando em tabelas as intenções, com seus respectivos valores. 
+É importante colocar uma justificativa sobre o porquê colocou aquilo como uma intenção e não entidade. 
+ 
+2. O mesmo deve ser aplicado para as entidades, justo com as justificativas e como podem ser utilizadas no sistema. 
+
+3. Um print da árvore de diálogo deve ser adicionado ao documento, com um descritivo explanatório do raciocínio utilizado na criação dele. 
+Caso utilize variáveis de contexto, inserir o print do detalhe de cada um dos nós que tiverem essa característica. 
+
+4. Por fim, um exemplo de diálogo demonstrando as diversas possibilidades através da ferramenta do Try it! 
+
+5. Além do documento Word, enviar em conjunto o arquivo JSON exportado da skill desenvolvida para esse desafio. 
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>As entregas deverão ser realizadas via Teams, até a data 17/04/2020 às 23h59<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
